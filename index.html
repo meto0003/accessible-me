@@ -14,24 +14,24 @@
 </head>
 
 <body>
-  <div class="container" id="top"> 
+  <div class="container" id="top">
     <ul class="skip-links">
       <li><a href="#nav">Skip to main nav</a> </li>
       <li><a href="#main">Skip to main content</a> </li>
     </ul>
     <header role="banner" class="site-header">
       <h1>Jam Box Studios</h1>
-      <nav role= "navigation" class="main-nav" id="nav">
-        <ul class= "nav-list">
+      <nav role="navigation" class="main-nav" id="nav">
+        <ul class="nav-list">
           <li><a href="#" aria-label="home page">Home</a></li>
           <li><a href="#" aria-label="products page">Products</a></li>
           <li><a href="#" aria-label="reservation page">Reservation</a></li>
           <li><a href="#" aria-label="studio page">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" aria-detail="kitten image" class="banner" alt="kitten photo">
+      <img src="https://placekitten.com/1200/900" aria-details="kitten-image" class="banner" alt="kitten photo">
     </header>
-    <main role="main" class="main-content"id="main">
+    <main role="main" class="main-content" id="main">
       <section class="intro">
         <h1 role="heading">Welcome to Jam Box</h1>
         <p>
@@ -51,15 +51,18 @@
             <li itemprop="jobTitle">Title: CEO</li>
             <li itemprop="email">Email: johnjoe@jambox.ca</li>
             <li itemprop="telephone">Phone: 613-000-0000</li>
+
           </ul>
           <h2>Address</h2>
-          <span itemprop="adress" itemscope itemtype="https://schema.org/PostalAddress"></span>
-            <span itemprop="legalName">Jambox Studios </span>
-            <span itemprop="streetAddress">123 Guitar Road,</span>
-            <span itemprop="addressLocality" >Musicville, Danceistan </span>
-            <span itemprop="postalCode">B3T 0L0</span>
-            
-        </span>
+          <ul  itemscope itemtype="https://schema.org/PostalAddress">
+            <li>
+              <span itemprop="name">Jambox Studios </span>
+              <span itemprop="streetAddress">123 Guitar Road,</span>
+              <span itemprop="addressLocality">Musicville, Danceistan </span>
+              <span itemprop="postalCode">B3T 0L0</span>
+            </li>
+          </ul>
+
         </section>
       </section>
       <section class="contact">
@@ -69,12 +72,12 @@
             <label for="yourname">Full Name </label>
             <input type="text" id="yourname" name="yourname" placeholder="Full Name">
             <label for="youremail">Email </label>
-            <input type="mail" placeholder="Email" name="youremail" id="youremail">
+            <input type="email" placeholder="Email" name="youremail" id="youremail">
             <label for="subject">Subject </label>
-            <input type="text" placeholder="Subject"name="subject" id="subject">
-            
+            <input type="text" placeholder="Subject" name="subject" id="subject">
+
             <label for="message"><b>Your Message</b></label>
-            <textarea id="message" name="message" placeholder="Write your message"></textarea> 
+            <textarea id="message" name="message" placeholder="Write your message"></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
